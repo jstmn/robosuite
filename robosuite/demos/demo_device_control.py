@@ -201,6 +201,8 @@ if __name__ == "__main__":
                 device=device, robot=active_robot, active_arm=args.arm, env_configuration=args.config
             )
 
+            print(action, grasp)
+
             # If action is none, then this a reset so we should break
             if action is None:
                 break
